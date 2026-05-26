@@ -188,22 +188,12 @@ run.log                 # 本轮运行日志
 
 `round{x}_output.json` 使用缩进格式，便于人工查看；其中 `selected_papers` 和 `rejected_papers` 使用论文标题展示。
 
-## 隐私与 Git
-
-真实的研究画像、筛选结果和日志可能包含个人研究偏好、API 报错信息或中转站信息。仓库默认忽略真实生成文件：
-
-```text
-Select_Results/**
-*.log
-```
-
-只保留 `Example_Project` 里的通用模板、`.gitkeep` 和 `*_sample.json`。如果你创建自己的项目分支，建议不要把真实 `Research_Profile`、`stage1_results.jsonl`、`round{x}_output.json` 或日志提交到公开仓库。
-
 ## 推荐工作流
 
 1. 修改 `Select1_Standard.md`，写宽松的初筛标准。
 2. 跑 `Select1_Eval.py`，得到完整评分 JSONL。
 3. 跑 `Select1_Filter.py`，用不同阈值控制候选规模。
-4. 人工浏览过滤结果，排除不想继续探索的方向。
-5. 修改 `Select2_Standard.md`，写更严格的终筛标准。
+4. 人工浏览过滤结果，看看有哪些不想继续探索的方向。
+5. 撰写 `Select2_Standard.md`，写更严格的终筛标准。
 6. 跑一轮或多轮 `Select2_PK.py`，得到最终精读列表。
+
