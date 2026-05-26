@@ -1,0 +1,11 @@
+[
+  {
+    "id": "paper_id_001",
+    "title": "Example Paper Title",
+    "abstract": "Example abstract text.",
+    "application_domain": "原始应用场景的一句话概括。",
+    "method_core": "核心方法或机制的一句话概括。",
+    "transferability_analysis": "结合研究画像说明是否值得迁移。",
+    "suitability_score": 8
+  }
+]

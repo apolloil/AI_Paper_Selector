@@ -1,0 +1,2 @@
+openai>=1.0.0
+openreview-py>=2.0.0
