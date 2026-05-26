@@ -190,10 +190,10 @@ run.log                 # 本轮运行日志
 
 ## 推荐工作流
 
-1. 修改 `Select1_Standard.md`，写宽松的初筛标准。
+1. 撰写 `Select1_Standard.md`，重点写关键词，形成较宽松的初筛标准。
 2. 跑 `Select1_Eval.py`，得到完整评分 JSONL。
 3. 跑 `Select1_Filter.py`，用不同阈值控制候选规模。
-4. 人工浏览过滤结果，看看有哪些不想继续探索的方向。
+4. 人工浏览过滤结果，看看有哪些不想继续探索的方向，可以作为后面Select2阶段的参考。
 5. 撰写 `Select2_Standard.md`，写更严格的终筛标准。
 6. 跑一轮或多轮 `Select2_PK.py`，得到最终精读列表。
 
