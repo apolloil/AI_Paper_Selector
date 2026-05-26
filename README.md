@@ -66,7 +66,7 @@ export OPENAI_BASE_URL="https://your-relay.example.com/v1"
 
 ## 数据格式
 
-`Raw_Dataset/iclr2026.json` 是 JSON 数组，每条论文至少包含：
+`Raw_Dataset/xxx.json` 是 JSON 数组，每条论文至少包含：
 
 ```json
 [
@@ -82,12 +82,12 @@ export OPENAI_BASE_URL="https://your-relay.example.com/v1"
 
 ## 0. 可选：采集论文
 
-仓库已经内置 ICLR 2026 数据，通常不需要重新采集。如果要从 OpenReview 重新拉取：
+仓库已经内置 ICLR 2026 数据。如果要从 OpenReview 重新拉取其余论文（如ICML、NIPS、CVPR等）：
 
 ```bash
 python src/Collect_Paper.py \
-  --venue-id ICLR.cc/2026/Conference \
-  --output Raw_Dataset/iclr2026.json
+  --venue-id xxxx \
+  --output Raw_Dataset/xxx.json
 ```
 
 ## 1. Stage 1 Eval：批量评估
